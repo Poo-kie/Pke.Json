@@ -6,7 +6,7 @@ namespace Pke.Json.RFC6902
     public static class LevenshteinDistance
     {
         /// <summary>
-        /// Compute the distance between two strings.
+        /// Compute the distance between two arrays.
         /// </summary>
         public static LevenshteinDistanceResult Execute<T>(T[] from, T[] to, Func<T, T, bool> equals) 
         {
