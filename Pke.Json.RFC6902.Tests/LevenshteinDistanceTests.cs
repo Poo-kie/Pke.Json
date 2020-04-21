@@ -14,7 +14,7 @@ namespace Pke.Json.RFC6902.Tests
 
             var result = LevenshteinDistance.Execute(from, to, CharEquals);
 
-            Assert.Equal(result.DistanceMatrix[3, 3], 1);
+            Assert.Equal(1, result.DistanceMatrix[3, 3]);
         }
 
         [Fact]
@@ -25,7 +25,7 @@ namespace Pke.Json.RFC6902.Tests
 
             var result = LevenshteinDistance.Execute(from, to, CharEquals);
 
-            Assert.Equal(result.DistanceMatrix[0, 3], 3);
+            Assert.Equal(3, result.DistanceMatrix[0, 3]);
         }
 
         [Fact]
@@ -36,7 +36,7 @@ namespace Pke.Json.RFC6902.Tests
 
             var result = LevenshteinDistance.Execute(from, to, CharEquals);
 
-            Assert.Equal(result.DistanceMatrix[3, 0], 3);
+            Assert.Equal(3, result.DistanceMatrix[3, 0]);
         }
 
         [Fact]
@@ -47,7 +47,7 @@ namespace Pke.Json.RFC6902.Tests
 
             var result = LevenshteinDistance.Execute(from, to, CharEquals);
 
-            Assert.Equal(result.DistanceMatrix[0, 0], 0);
+            Assert.Equal(0, result.DistanceMatrix[0, 0]);
         }
 
         [Fact]
